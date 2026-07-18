@@ -1,9 +1,0 @@
-fastapi
-uvicorn
-httpx
-groq
-python-dotenv
-pydantic
-pydantic-settings
-pytest
-pytest-asyncio

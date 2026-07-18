@@ -1,0 +1,24 @@
+# environment
+.env
+.env.*
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+*.egg-info/
+
+# testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ide
+.vscode/
+.idea/
+
+# docker
+*.log
