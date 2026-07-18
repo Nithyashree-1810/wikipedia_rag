@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wikipedia RAG Assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<div class="app">
+  <div class="header">
+    <span>📖</span>
+    <h1>Wikipedia RAG Assistant</h1>
+    <span class="model-tag">Llama 3.1 · Groq</span>
+    <span class="badge">RAG Pipeline</span>
+  </div>
+
+  <div class="messages" id="messages">
+    <div class="msg">
+      <div class="avatar bot">W</div>
+      <div class="bubble bot">
+        Hi! Ask me anything — I'll search Wikipedia, rerank passages with TF-IDF, and answer using only what I find there. Sources included.
+      </div>
+    </div>
+  </div>
+
+  <div class="suggestions" id="suggestions"></div>
+
+  <div class="input-row">
+    <input id="inp" placeholder="Ask anything about any topic..." />
+    <button id="btn" onclick="ask()">Ask →</button>
+  </div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
